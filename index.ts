@@ -1,3 +1,2 @@
-var number: Number = 2;
-
+let number: number = 2;
 console.log(number);
