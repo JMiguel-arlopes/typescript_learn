@@ -36,4 +36,10 @@ enum StatusCode {
   NotFound,
 }
 
-console.log(StatusCode.Unauthorized);
+// Type Asserts (ATENÇÃO)!
+// usado para mudar o tipo de uma propriedade quando é atribuida a uma variável
+const itemEx: any = 2;
+
+let changeType = itemEx as number;
+// or
+changeType = <number>itemEx;
