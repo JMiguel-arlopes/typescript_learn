@@ -31,4 +31,9 @@ var StatusCode;
     StatusCode[StatusCode["Forbidden"] = 403] = "Forbidden";
     StatusCode[StatusCode["NotFound"] = 404] = "NotFound";
 })(StatusCode || (StatusCode = {}));
-console.log(StatusCode.Unauthorized);
+// Type Asserts (ATENÇÃO)!
+// usado para mudar o tipo de uma propriedade quando é atribuida a uma variável
+const itemEx = 2;
+let changeType = itemEx;
+// or
+changeType = itemEx;

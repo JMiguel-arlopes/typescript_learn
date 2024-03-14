@@ -31,7 +31,7 @@ const professor: User = {
     { name: "vitor", years: 23 },
     { name: "rafael", years: 34 },
   ],
-  register(x: string) {
+  register() {
     return "a";
   },
 };
@@ -41,16 +41,19 @@ type Author = {
   books: string[];
 };
 
-// const author: Author & User = {
-//   name: "João Miguel",
-//   age: 20,
-//   email: "jmiguelarlopes@gmail.com",
-//   docs: [
-//     { name: "vitor", years: 23 },
-//     { name: "rafael", years: 34 },
-//   ],
-//   books: ["infinito", "mugen", "blue", "red"],
-// };
+const author: Author & User = {
+  name: "João Miguel",
+  age: 20,
+  email: "jmiguelarlopes@gmail.com",
+  docs: [
+    { name: "vitor", years: 23 },
+    { name: "rafael", years: 34 },
+  ],
+  books: ["infinito", "mugen", "blue", "red"],
+  register() {
+    return "joão";
+  },
+};
 
 // Interface: basicamente a mesma coisa, a diferença é que você pode inserir mais funcionalidades nos itens do objeto (ex: readonly)
 // com interfaces/types também podemos incluir funções:
@@ -63,5 +66,3 @@ interface MathFunc {
 // INTERFACES para funções projetam funções anônimas tipagens e nomeando os parâmetros e tipando o retorno
 // INTERFACES em objetos deve nomear, dizer os parametros e o que retorna. Quando for chamada, apenas abra chaves e faça oq a função deve fazer
 // pronto
-
-
