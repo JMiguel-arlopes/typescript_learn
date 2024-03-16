@@ -1,12 +1,16 @@
-const returnNumber = <Type>(var: Type) => {
-    
+const returnNumber = <Type>(vars: Type): Type => {
+  return vars;
+};
+
+const returnedNumber = returnNumber<number>(20);
+
+interface Pair<Type, Utype> {
+  first: Type;
+  second: Utype;
 }
 
-
-interface Pair<T, U> {
-  first: T;
-  second: U;
-}
-
-const pair: Pair<number, string> = { first: 1, second: "two" };
+const pair: Pair<number, string> = {
+  first: 1,
+  second: "two",
+};
 console.log(pair); // Output: { first: 1, second: 'two' }

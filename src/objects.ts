@@ -16,6 +16,7 @@ type User = {
   password?: string; // ao colocar "?" você impõe que o item é opcional dentro do objeto declarado com esse Type/Interface aqui, mas atenção pois ao fazer isso você está pondo undefined no item caso ele nn venha a ser utilizado, podendo causar futuros erros
   docs: Struct[];
   register(x: string): string;
+  onClick?: () => void;
 };
 
 // agora você irá construir um OBJETO que siga a tipagem estruturada que você criou:
